@@ -22,10 +22,10 @@
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .card {
-  width: 100px;
-  height: 100px;
+  width: 10%;
+  height: 10%;
   position: relative;
-  margin: 1.5rem;
+  margin: 1rem;
   cursor: pointer;
 }
 .front {
