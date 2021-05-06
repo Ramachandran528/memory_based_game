@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
+.container {
+  width: 80%;
+  height: auto;
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #242b2e;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.card {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 1.5rem;
+  cursor: pointer;
+}
+.front {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  transition: 0.3s;
+  transform: rotateY(180deg);
+  border-radius: 5px;
+}
+.back {
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+  transform: rotateY(0deg);
+  border-radius: 5px;
+}
+.flip .back {
+  transform: rotateY(90deg);
+  transition: 0.1s;
+}
+.flip .front {
+  transform: rotateY(0deg);
+}
